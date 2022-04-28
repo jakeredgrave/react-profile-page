@@ -65,6 +65,10 @@ function App() {
     setPosts([...posts, newPost]);
     console.log(typeof posts);
   };
+
+  const deleteTweet = (id) => {
+    setPosts(posts.filter((post) => post.id !== id));
+  };
   // const editInfo = (updatedInfo) => {
   //   let infoCopy = { ...profileInfo };
   //   let keysAndValues = Object.entries(infoCopy);
@@ -94,6 +98,7 @@ function App() {
         posts={posts}
         profileInfo={profileInfo}
         onShow={() => setShowEditForm(!showEditForm)}
+        onDelete={deleteTweet}
       />
       <Search />
 

@@ -64,11 +64,7 @@ const Sidebar = ({ onAdd, onShow }) => {
           </li>
         </ul>
         <Button text="Tweet" btnClass="add-tweet-button" event={onShow} />
-        <Button
-          text={BsPlusCircle}
-          btnClass="small-add-tweet-button"
-          event={onShow}
-        />
+        <Button text="+" btnClass="small-add-tweet-button" event={onShow} />
       </div>
     </div>
   );

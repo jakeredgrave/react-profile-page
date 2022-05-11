@@ -7,9 +7,8 @@ import { FaBookmark } from "react-icons/fa";
 import { BsFileTextFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import { CgMoreO } from "react-icons/cg";
-import { BsPlusCircle } from "react-icons/bs";
 
-const Sidebar = ({ onAdd, onShow }) => {
+const Sidebar = ({ onShow }) => {
   return (
     <div className="sidebar">
       <div className="sidebar-menu">

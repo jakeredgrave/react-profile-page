@@ -1,5 +1,3 @@
-import React from "react";
-
 const Location = ({ fromLocation, currentLocation }) => {
   return (
     <div className="location">

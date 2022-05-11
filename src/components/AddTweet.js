@@ -20,7 +20,7 @@ const AddTweet = ({ onAdd, onShow }) => {
         <div className="close-new-tweet-button-box">
           <Button text="X" btnClass="close-new-tweet-button" event={onShow} />
         </div>
-        {/* <input type="text" onChange={(e) => setText(e.target.value)} /> */}
+
         <textarea
           placeholder="What's up?"
           onChange={(e) => setText(e.target.value)}

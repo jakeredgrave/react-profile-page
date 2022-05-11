@@ -67,28 +67,6 @@ function App() {
   const deleteTweet = (id) => {
     setPosts(posts.filter((post) => post.id !== id));
   };
-  // const editInfo = (updatedInfo) => {
-  //   let infoCopy = { ...profileInfo };
-  //   let keysAndValues = Object.entries(infoCopy);
-  //   let updatedValues = Object.entries(updatedInfo);
-  //   for (let i = 0; i < updatedValues.length; i++) {
-  //     // console.log(updatedValues[i][0] + " " + updatedValues[i][1]);
-  //     for (let j = 0; j < keysAndValues.length; j++) {
-  //       // console.log(keysAndValues[j][0] + " " + keysAndValues[j][1]);
-  //       if (
-  //         updatedValues[i][0] === keysAndValues[j][0] &&
-  //         updatedValues[i][1] !== keysAndValues[j][1]
-  //       ) {
-  //         // console.log(updatedValues[i][0] + " " + keysAndValues[j][0]);
-  //         // console.log(updatedValues[i][1] + " " + keysAndValues[j][1]);
-  //         keysAndValues[j][1] = updatedValues[i][1];
-  //       }
-  //     }
-  //   }
-  //   setProfileInfo(keysAndValues);
-  //   // console.log(keysAndValues);
-  //   // console.log(keysAndValues);
-  // };
   return (
     <div className="App grid">
       <Sidebar onShow={() => setShowAddTweet(!showAddTweet)} />

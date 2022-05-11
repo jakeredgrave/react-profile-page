@@ -3,9 +3,8 @@ import NameAndAge from "./NameAndAge";
 import AboutMe from "./AboutMe";
 import Location from "./Location";
 import Button from "./Button";
-import PostsQuantity from "./PostsQuantity";
 
-const Header = ({ profileInfo, onShow, posts }) => {
+const Header = ({ profileInfo, onShow }) => {
   return (
     <div className="header-box grid">
       <ProfilePicture

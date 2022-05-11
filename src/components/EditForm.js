@@ -9,7 +9,7 @@ const EditForm = ({ profileInfo, editInfo, onShow }) => {
   const [currentLocation, setCurrentLocation] = useState(
     profileInfo.currentLocation
   );
-  const [aboutMe, setAboutMe] = useState(profileInfo.aboutMe);
+  const [about, setAbout] = useState(profileInfo.about);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +20,14 @@ const EditForm = ({ profileInfo, editInfo, onShow }) => {
     if (!lastName) {
       alert("Please enter your last name");
     }
-    editInfo({ name, lastName, age, fromLocation, currentLocation, aboutMe });
+    editInfo({
+      name,
+      lastName,
+      age,
+      fromLocation,
+      currentLocation,
+      about,
+    });
     onShow();
   };
 
@@ -31,9 +38,6 @@ const EditForm = ({ profileInfo, editInfo, onShow }) => {
       <form className="edit-form card modal" onSubmit={onSubmit}>
         <div className="form-buttons">
           <Button text="X" btnClass="close-edit-button" event={onShow} />
-          {/* <button className="btn close-edit-button" onClick={onShow}>
-              X
-            </button> */}
           <input className="btn submit-button" type="submit" value="Save" />
         </div>
         <div className="form-control">
@@ -89,16 +93,18 @@ const EditForm = ({ profileInfo, editInfo, onShow }) => {
               onChange={(e) => setCurrentLocation(e.target.value)}
             />
           </div>
+
           <div className="input-box">
-            <p>Currently Living</p>
-            <textarea
-              placeholder="About Me"
-              name="about-me"
+            <p>About</p>
+            <input
+              type="text"
+              placeholder="About"
+              name="about"
               id="about-edit"
-              maxLength={"160"}
-              value={aboutMe}
-              onChange={(e) => setAboutMe(e.target.event)}
-            ></textarea>
+              maxLength={160}
+              value={about}
+              onChange={(e) => setAbout(e.target.value)}
+            />
           </div>
         </div>
       </form>

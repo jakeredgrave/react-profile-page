@@ -4,9 +4,8 @@ import Sidebar from "./components/Sidebar";
 import EditForm from "./components/EditForm";
 import AddTweet from "./components/AddTweet";
 import Search from "./components/Search";
-import img1 from "./Pictures/joseph2.jpg";
-import background from "./Pictures/background.jpg";
-import PostsQuantity from "./components/PostsQuantity";
+import img1 from "./Pictures/Phoenix_Wright.gif";
+import background from "./Pictures/Jotaro.png";
 
 function App() {
   const [profileInfo, setProfileInfo] = useState({
@@ -19,7 +18,6 @@ function App() {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis massa id dictum porta. Vivamus non tellus tempus, condimentum ipsum id, eleifend tortor. Cras et sodales ligula. Vivamus ultrices rhoncus mauris. Proin nec consequat neque, a feugiat tortor. Pellentesque hendrerit neque vel hendrerit facilisis. Pellentesque fringilla nec nulla in viverra. Nunc justo massa, euismod eget gravida et, tincidunt sit amet dolor. Pellentesque dignissim vestibulum ante in gravida.",
     fromLocation: "Gotham City",
     currentLocation: "Central City",
-    // webPages: ["test1", "test2", "test3"],
   });
   const [posts, setPosts] = useState([
     {
@@ -28,27 +26,27 @@ function App() {
     },
     {
       id: 2,
-      text: "STAR PLATINUM!",
+      text: "Example post text",
     },
     {
       id: 3,
-      text: "STAR PLATINUM!",
+      text: "Example post text",
     },
     {
       id: 4,
-      text: "STAR PLATINUM!",
+      text: "Example post text",
     },
     {
       id: 5,
-      text: "STAR PLATINUM!",
+      text: "Example post text",
     },
     {
       id: 6,
-      text: "STAR PLATINUM!",
+      text: "Example post text",
     },
     {
       id: 7,
-      text: "STAR PLATINUM!",
+      text: "Example post text",
     },
   ]);
   const [showEditForm, setShowEditForm] = useState(false);

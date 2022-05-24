@@ -10,6 +10,7 @@ body {
 }
 
 .App.grid {
+  width: 100vw;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
